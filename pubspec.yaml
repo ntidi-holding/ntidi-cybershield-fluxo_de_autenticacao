@@ -1,0 +1,66 @@
+name: ntidi
+description: "NTI Digital Innovation"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # --- Dependências principais ---
+  pinput: ^5.0.0
+  intl: ^0.20.2
+  cupertino_icons: ^1.0.8
+  go_router: ^16.2.5
+  google_fonts: ^6.2.1
+  dio: ^5.5.0
+  get_it: ^8.2.0
+  flutter_secure_storage: ^9.2.2
+  flutter_svg: ^2.0.10+1
+  flutter_dotenv: ^6.0.0
+  file_picker: ^10.3.3
+  url_launcher: ^6.3.0
+  fl_chart: ^1.1.1
+  percent_indicator: ^4.2.3
+  image_picker: ^1.1.2
+  mask_text_input_formatter: ^2.9.0
+  http: ^1.2.1
+  flutter_staggered_animations: ^1.1.1
+  firebase_core: ^4.2.0
+  firebase_messaging: ^16.0.3
+  flutter_local_notifications: ^19.5.0
+  permission_handler: ^12.0.1
+  lottie: ^3.1.2
+
+  # --- Gravação de áudio ---
+  record: ^6.1.2
+  path_provider: ^2.1.4
+
+  # --- Serviços de monitoramento ---
+  flutter_background_service: ^5.0.5
+  speech_to_text: ^7.3.0
+  notification_listener_service: ^0.3.4
+
+  
+  universal_html: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+dependency_overrides:
+  js: ^0.7.1
+  record_platform_interface: ^1.4.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/
+    - assets/logo.webp
