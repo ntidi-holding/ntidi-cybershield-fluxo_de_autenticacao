@@ -20,7 +20,9 @@ class AuthInterceptor extends Interceptor {
     RequestOptions options,
     RequestInterceptorHandler handler,
   ) async {
-    final isAuthRequest = options.path.contains('auth/login');
+
+    final isAuthRequest = options.path.contains('auth/login') || options.path.contains('auth/register');
+
     if (!isAuthRequest) {
       final token = await _storage.read(key: 'access_token');
       if (token != null) {

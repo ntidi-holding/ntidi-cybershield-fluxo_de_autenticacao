@@ -14,6 +14,7 @@ class LoginRequest {
     );
   }
 
+// Converte o objeto LoginRequest em um mapa JSON 
   Map<String, dynamic> toMap() {
     return {'email': email, 'password': password, 'rememberMe': rememberMe};
   }

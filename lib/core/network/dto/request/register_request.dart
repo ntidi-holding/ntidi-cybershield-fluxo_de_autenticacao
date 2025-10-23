@@ -57,6 +57,7 @@ class RegisterRequest {
     this.allowsPublicDbCheck,
   });
 
+// Converte o objeto RegisterRequest em um mapa JSON
   Map<String, dynamic> toJson() {
     return {
       'user_type': userType,
